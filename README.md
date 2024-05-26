@@ -146,3 +146,7 @@ To get started with development:
 - Set up a symlink by running `npm link`, while in the `react-new-component-cli` directory. This will ensure that the `rnc` command uses this locally-cloned project, rather than the global NPM installation.
 - Spin up a test React project.
 - In that test project, use the `rnc` command to create components and test that your changes are working.
+
+## Special thanks
+
+Special thanks to ✨ [Josh W. Comeau](https://www.joshwcomeau.com/) ✨, this utility's base is a fork from [his repository](https://github.com/joshwcomeau/new-component).
