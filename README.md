@@ -25,10 +25,10 @@ Install via NPM:
 
 ```bash
 # Using NPM
-$ npm i -g @azelky/react-new-component-cli
+$ npm i -g react-new-component-cli
 
 # or, using Yarn:
-$ yarn global add @azelky/react-new-component-cli
+$ yarn global add react-new-component-cli
 ```
 
 `cd` into your project's directory, and try creating a new component:
