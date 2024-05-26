@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/azelky/react-new-component-cli/compare/v1.0.1...v1.0.2) (2024-05-26)
+
+
+### Bug Fixes
+
+* 🐛 fix dependencies list to add commander ([a8a6db2](https://github.com/azelky/react-new-component-cli/commit/a8a6db216f69799d350d0d0bd12a27180bfe1de8))
+
 ### [1.0.1](https://github.com/azelky/react-new-component-cli/compare/v1.0.0...v1.0.1) (2024-05-26)
 
 
