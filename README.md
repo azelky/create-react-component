@@ -1,4 +1,8 @@
-# create-react-component
+# react-new-component-cli
+
+<div align="center">
+  <img src="https://github.com/azelky/react-new-component-cli/blob/main/docs/react-new-component-cli.svg?raw=true" width="270" height="248" alt="react-new-component-cli logo">
+</div>
 
 ### Simple, customizable utility for adding new React / Next components to your project
 
@@ -21,16 +25,16 @@ Install via NPM:
 
 ```bash
 # Using NPM
-$ npm i -g @azelky/create-react-component
+$ npm i -g @azelky/react-new-component-cli
 
 # or, using Yarn:
-$ yarn global add @azelky/create-react-component
+$ yarn global add @azelky/react-new-component-cli
 ```
 
 `cd` into your project's directory, and try creating a new component:
 
 ```bash
-$ create-component MyShinyComponent
+$ rnc MyShinyComponent
 ```
 
 Your project will now have a new directory at `app/ui/MyShinyComponent`. This directory has three files:
@@ -60,8 +64,8 @@ These files will be formatted according to your Prettier configuration.
 
 Configuration can be done through 3 different ways:
 
-- Creating a global `.create-component-config.json` in your home directory (`~/.create-component-config.json`).
-- Creating a local `.create-component-config.json` in your project's root directory.
+- Creating a global `.react-component-config.json` in your home directory (`~/.react-component-config.json`).
+- Creating a local `.react-component-config.json` in your project's root directory.
 - Command-line arguments.
 
 The resulting values are merged, with command-line values overwriting local values, and local values overwriting global ones.
@@ -124,7 +128,7 @@ This has only been tested in MacOS environment.
 To get started with development:
 
 - Fork and clone the Git repo
-- `cd` into the directory and install dependencies (`yarn install` or `npm install`)
-- Set up a symlink by running `npm link`, while in the `create-react-component` directory. This will ensure that the `create-component` command uses this locally-cloned project, rather than the global NPM installation.
+- `cd` into the directory and install dependencies (`npm install` or `yarn install`)
+- Set up a symlink by running `npm link`, while in the `react-new-component-cli` directory. This will ensure that the `rnc` command uses this locally-cloned project, rather than the global NPM installation.
 - Spin up a test React project.
-- In that test project, use the `create-component` command to create components and test that your changes are working.
+- In that test project, use the `rnc` command to create components and test that your changes are working.

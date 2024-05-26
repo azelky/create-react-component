@@ -1,5 +1,5 @@
 // Overriding config file name
-export const configFileName = '.create-component-config.json';
+export const configFileName = '.react-component-config.json';
 
 // Style extensions available or none if no styles file needed
 export const styleTypes = {
@@ -42,7 +42,7 @@ export { _colors as colors };
 
 // Texts for different cases
 export const texts = {
-  componentNameMissing: `Sorry, you need to specify a name for your component 🧐\nThe expected format is: create-component <name>`,
+  componentNameMissing: `Sorry, you need to specify a name for your component 🧐\nThe expected format is: rnc <name>`,
   directoryCreated: 'Directory created 📂',
   componentCreated: 'Component created and saved 👍',
   indexFileCreated: 'Index file created and saved 👌',

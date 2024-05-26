@@ -1,16 +1,16 @@
 {
-  "name": "@azelky/create-react-component",
+  "name": "react-new-component-cli",
   "version": "1.0.0",
   "description": "A simple CLI tool to create new React / Next.js components",
   "author": "Azelky | Justine MAZURE (https://mazuju.com)",
   "license": "MIT",
-  "homepage": "https://github.com/azelky/create-react-component",
+  "homepage": "https://github.com/azelky/react-new-component-cli",
   "repository": {
     "type": "git",
-    "url": "https://github.com/azelky/create-react-component"
+    "url": "https://github.com/azelky/react-new-component-cli"
   },
   "bugs": {
-    "url": "https://github.com/azelky/create-react-component/issues"
+    "url": "https://github.com/azelky/react-new-component-cli/issues"
   },
   "main": "src/index.js",
   "scripts": {
@@ -27,12 +27,13 @@
     "boilerplate",
     "cli",
     "generate",
+    "tool",
     "crc",
     "react component",
     "next component"
   ],
   "bin": {
-    "crc": "./src/index.js"
+    "rnc": "./src/index.js"
   },
   "dependencies": {
     "chalk": "5",
