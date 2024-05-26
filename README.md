@@ -2,6 +2,10 @@
 
 <div align="center">
   <img src="https://github.com/azelky/react-new-component-cli/blob/main/docs/react-new-component-cli.svg?raw=true" width="270" height="248" alt="react-new-component-cli logo">
+  <br><br>
+  <a href="https://www.npmjs.org/package/react-new-component-cli"><img src="https://img.shields.io/npm/v/react-new-component-cli.svg?style=flat" alt="npm"></a>
+</p>
+
 </div>
 
 ### Simple, customizable utility for adding new React / Next components to your project
@@ -69,6 +73,16 @@ Configuration can be done through 3 different ways:
 - Command-line arguments.
 
 The resulting values are merged, with command-line values overwriting local values, and local values overwriting global ones.
+
+Example JSON configuration file:
+
+```json
+{
+  "lang": "ts",
+  "style": ".scss",
+  "dir": "src/components"
+}
+```
 
 <br />
 
