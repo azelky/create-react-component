@@ -15,7 +15,10 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "standard-version && git push --follow-tags"
+    "release": "standard-version && git push --follow-tags",
+    "release:major": "standard-version -- --release-as major && git push --follow-tags",
+    "release:minor": "standard-version -- --release-as minor && git push --follow-tags",
+    "release:patch": "standard-version -- --release-as patch && git push --follow-tags"
   },
   "type": "module",
   "keywords": [
