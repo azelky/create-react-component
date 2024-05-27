@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.3](https://github.com/azelky/react-new-component-cli/compare/v1.1.2...v1.1.3) (2024-05-27)
+
+
+### Bug Fixes
+
+* 🐛 fix styles import and remove default export, add classname to js tpl ([00d637d](https://github.com/azelky/react-new-component-cli/commit/00d637d2eaeaffafcaf3d406dc9815e365c4c26f))
+
 ### [1.1.2](https://github.com/azelky/react-new-component-cli/compare/v1.1.1...v1.1.2) (2024-05-27)
 
 ### [1.1.1](https://github.com/azelky/react-new-component-cli/compare/v1.1.0...v1.1.1) (2024-05-27)
