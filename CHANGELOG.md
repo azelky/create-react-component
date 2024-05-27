@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/azelky/react-new-component-cli/compare/v1.1.3...v1.2.0) (2024-05-27)
+
+
+### Features
+
+* ✨ add default export to component ([3f1ecb4](https://github.com/azelky/react-new-component-cli/commit/3f1ecb4b655831c3c26285730ace7f6bc1055f24))
+
 ### [1.1.3](https://github.com/azelky/react-new-component-cli/compare/v1.1.2...v1.1.3) (2024-05-27)
 
 
