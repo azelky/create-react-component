@@ -8,18 +8,14 @@
 
 </div>
 
-### Simple, customizable utility for adding new React / Next components to your project
+### Simple, customizable utility for adding new React / Next components to your project ✨
 
 This project is a CLI tool that allows you to quickly scaffold new components. All of the necessary boilerplate will be generated automatically.
 
-<br />
-
-## Features
-
-- Simple CLI interface for adding React components.
-- Uses [Prettier](https://github.com/prettier/prettier) to stylistically match the existing project.
-- Offers global config, which can be overridden on a project-by-project basis.
-- Colourful terminal output!
+- ⌨️ Simple CLI interface for adding React components.
+- ✨ Uses [Prettier](https://github.com/prettier/prettier) to stylistically match the existing project.
+- 📝 Offers global config, which can be overridden on a project-by-project basis.
+- 🌈 Colourful terminal output!
 
 <br />
 
@@ -28,41 +24,22 @@ This project is a CLI tool that allows you to quickly scaffold new components. A
 Install via NPM:
 
 ```bash
-# Using NPM
-$ npm i -g react-new-component-cli
-
-# or, using Yarn:
-$ yarn global add react-new-component-cli
+npm i -g react-new-component-cli
 ```
 
 `cd` into your project's directory, and try creating a new component:
 
 ```bash
-$ rnc MyShinyComponent
+rnc MyShinyComponent
 ```
 
-Your project will now have a new directory at `app/ui/MyShinyComponent`. This directory has three files:
+Your project will now have a new directory at `app/ui/MyShinyComponent` containing three files :
 
-```ts
-// `MyShinyComponent/index.ts`
-export * from './MyShinyComponent';
-export { default } from './MyShinyComponent';
-```
-
-```tsx
-// `MyShinyComponent/MyShinyComponent.tsx`
-import styles from 'my-shiny-component.module.scss';
-
-function MyShinyComponent() {
-  return <div></div>;
-}
-
-export default MyShinyComponent;
-```
+- `MyShinyComponent.tsx`
+- `my-shiny-component.module.scss`
+- `index.ts`
 
 These files will be formatted according to your Prettier configuration.
-
-<br />
 
 ## Configuration
 
@@ -88,36 +65,15 @@ Example JSON configuration file:
 
 ## API Reference
 
-### Language
+All components created will be functional components.
 
-Controls which language, JavaScript or TypeScript, should be used.
+| Option  | Shorthand | JSON config            | Defaults       | Description                                                          |
+| ------- | --------- | ---------------------- | -------------- | -------------------------------------------------------------------- |
+| --lang  | -l        | `{ "lang": <value> }`  | `ts`           | Controls which language, JavaScript or TypeScript, should be used.   |
+| --dir   | -d        | `{ "dir": <value> }`   | `app/ui`       | Controls the desired directory for the created component             |
+| --style | -s        | `{ "style": <value> }` | `.module.scss` | Controls the desired style file extension for the created component. |
 
-- `ts` — creates a `.tsx` file (default).
-- `js` — creates a `.js` file.
-
-Note that all components created will be functional components. Class components are not supported.
-
-**Usage:**
-
-Command line: `--lang <value>` or `-l <value>`
-
-JSON config: `{ "lang": <value> }`
-<br />
-
-### Directory
-
-Controls the desired directory for the created component. Defaults to `app/ui`
-
-**Usage:**
-
-Command line: `--dir <value>` or `-d <value>`
-
-JSON config: `{ "dir": <value> }`
-<br />
-
-### Style type
-
-Controls the desired included style file extension for the created component. Defaults to `.module.scss`
+### More about style extension API
 
 Available values:
 
@@ -125,24 +81,30 @@ Available values:
 - `.scss` or `.css` for classic styles file — the component name will be kept PascalCase style
 - `none` if you don't want any style file included.
 
-**Usage:**
+### Examples
 
-Command line: `--style <styleExtension>` or `-s <styleExtension>`
+```bash
+# (defaults)
+# Creates Tile.tsx, index.ts and tile.module.scss file in app/ui directory
+rnc Tile
 
-JSON config: `{ "style": <value> }`
-<br />
+# Creates Tile.jsx, index.js and Tile.css file in src/components directory
+rnc Tile -s .css -d src/components -l js
+
+# Creates Tile.tsx, index.ts in src/components directory
+rnc Tile -s none -d src/components
+```
 
 ## Platform Support
 
-This has only been tested in MacOS environment.
-<br />
+This utility has only been tested in MacOS environment.
 
 ## Development
 
 To get started with development:
 
 - Fork and clone the Git repo
-- `cd` into the directory and install dependencies (`npm install` or `yarn install`)
+- `cd` into the directory and install dependencies (`npm install`)
 - Set up a symlink by running `npm link`, while in the `react-new-component-cli` directory. This will ensure that the `rnc` command uses this locally-cloned project, rather than the global NPM installation.
 - Spin up a test React project.
 - In that test project, use the `rnc` command to create components and test that your changes are working.
