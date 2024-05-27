@@ -1,5 +1,7 @@
 import React from 'react';
 
-STYLESexport function COMPONENT_NAME() {
+STYLESfunction COMPONENT_NAME() {
   return <divCLASSNAME>Component COMPONENT_NAME</div>;
 }
+
+export default COMPONENT_NAME;
