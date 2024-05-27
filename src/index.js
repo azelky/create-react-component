@@ -59,7 +59,6 @@ const indexPath = `${componentDir}/index.${indexExtension}`;
 // Our index.{js|ts} template
 const indexTemplate = prettify(`\
 export * from './${componentName}';
-export { default } from './${componentName}';
 `);
 
 // First step logged in with component info from user or default config

@@ -1,5 +1,5 @@
-STYLESfunction COMPONENT_NAME() {
-  return <div></div>;
-}
+import React from 'react';
 
-export default COMPONENT_NAME;
+STYLESexport function COMPONENT_NAME() {
+  return <divCLASSNAME>Component COMPONENT_NAME</div>;
+}
