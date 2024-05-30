@@ -12,7 +12,7 @@ export const styleTypes = {
 
 export const defaultConfig = {
   lang: 'ts',
-  dir: 'app/ui',
+  dir: 'src/ui',
   style: styleTypes.scssModule
 };
 

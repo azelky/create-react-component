@@ -33,10 +33,10 @@ npm i -g react-new-component-cli
 rnc MyShinyComponent
 ```
 
-Your project will now have a new directory at `app/ui/MyShinyComponent` containing three files :
+Your project will now have a new directory at `src/ui/MyShinyComponent` containing three files :
 
 - `MyShinyComponent.tsx`
-- `my-shiny-component.module.scss`
+- `MyShinyComponent.module.scss`
 - `index.ts`
 
 These files will be formatted according to your Prettier configuration.
@@ -70,15 +70,15 @@ All components created will be functional components.
 | Option  | Shorthand | JSON config            | Defaults       | Description                                                          |
 | ------- | --------- | ---------------------- | -------------- | -------------------------------------------------------------------- |
 | --lang  | -l        | `{ "lang": <value> }`  | `ts`           | Controls which language, JavaScript or TypeScript, should be used.   |
-| --dir   | -d        | `{ "dir": <value> }`   | `app/ui`       | Controls the desired directory for the created component             |
+| --dir   | -d        | `{ "dir": <value> }`   | `src/ui`       | Controls the desired directory for the created component             |
 | --style | -s        | `{ "style": <value> }` | `.module.scss` | Controls the desired style file extension for the created component. |
 
 ### More about style extension API
 
 Available values:
 
-- `.module.scss` or `.module.css` for modules — the component name will be transposed to kebab-case
-- `.scss` or `.css` for classic styles file — the component name will be kept PascalCase style
+- `.module.scss` or `.module.css` for CSS modules
+- `.scss` or `.css` for classic styles file
 - `none` if you don't want any style file included.
 
 ### Examples

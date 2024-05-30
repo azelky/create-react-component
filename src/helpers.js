@@ -85,10 +85,10 @@ export function getCssFileInfo(info) {
   switch (info.styleExtension) {
     case '.css':
     case '.scss':
-      cssClassName = `${info.componentName}`;
-      cssFileName = `${cssClassName}${info.styleExtension}`;
+      cssClassName = `${toKebabCase(info.componentName)}`;
+      cssFileName = `${info.componentName}${info.styleExtension}`;
       styleFile = `import './${cssFileName}';\n\n`;
-      cssClass = ` className="${info.componentName}"`;
+      cssClass = ` className="${cssClassName}"`;
 
       writeFilePromise(`${info.componentDir}/${cssFileName}`, '');
       break;
@@ -96,7 +96,7 @@ export function getCssFileInfo(info) {
     case '.module.css':
     case '.module.scss':
       cssClassName = `${toKebabCase(info.componentName)}`;
-      cssFileName = `${cssClassName}${info.styleExtension}`;
+      cssFileName = `${info.componentName}${info.styleExtension}`;
       styleFile = `import styles from './${cssFileName}';\n\n`;
       cssClass = cssClassName.indexOf('-') !== -1 ? ` className={styles['${cssClassName}']}` : ` className={styles.${cssClassName}}`;
 
