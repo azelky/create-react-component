@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/azelky/react-new-component-cli/compare/v1.2.0...v1.3.0) (2024-05-30)
+
+
+### Features
+
+* ✨ update styles filename convention, components dir, ts fn return type ([6a325fb](https://github.com/azelky/react-new-component-cli/commit/6a325fbca3d523308961dc1f2381bccc1664f669))
+
 ## [1.2.0](https://github.com/azelky/react-new-component-cli/compare/v1.1.3...v1.2.0) (2024-05-27)
 
 
